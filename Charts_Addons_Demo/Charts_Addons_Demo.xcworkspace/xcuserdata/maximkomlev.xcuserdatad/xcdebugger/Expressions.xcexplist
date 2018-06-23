@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AggregatedBarChartExample1ViewController.initializeChartLimitLines():AggregatedBarChartExample1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "xAxis.axisMinimum">
+            </PersistentString>
+            <PersistentString
+               value = "xAxis.axisMaximum">
+            </PersistentString>
+            <PersistentString
+               value = "Date(timeIntervalSince1970: dateValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartDateValueFormatter.stringForValue(_:axis:):AggregatedBarChartDateValueFormatter.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dif / (24 * 3600)">
+            </PersistentString>
+            <PersistentString
+               value = "(_dateFormatter.timeZone.secondsFromGMT() + Int(value)) % (24 * 3600)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AxisBase.getFormattedLabel(_:):AxisBase.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "entries.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartRenderer.drawDataSet(context:dataSet:index:):AggregatedBarChartRenderer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buffer.rects[j].origin.x">
+            </PersistentString>
+            <PersistentString
+               value = "viewPortHandler">
+            </PersistentString>
+            <PersistentString
+               value = "groupRects">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ChartData.getDataSetByIndex(_:):ChartData.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_dataSets">
+            </PersistentString>
+            <PersistentString
+               value = "_dataSets.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartExample1ViewController.loadChartData():AggregatedBarChartExample1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_chartData">
+            </PersistentString>
+            <PersistentString
+               value = "NSArray(contentsOfFile: path)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartRenderer.findDataIndexFor(highlight:):AggregatedBarChartRenderer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.groupRects[idx].dataIndexOfTopEntry">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BarChartView.barData.getter:BarChartView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartExample1ViewController.getMarkerPosition(highlight:):AggregatedBarChartExample1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(_chartView.marker as UIView).frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AggregatedBarChartExample1ViewController.chartValueSelected(_:entry:highlight:):AggregatedBarChartExample1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_selectedValueLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in AnimatedTransitioning.animateTransition(using:):AnimatedTransitioning.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "transitionContext.transitionWasCancelled">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

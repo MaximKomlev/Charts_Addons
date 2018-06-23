@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AggregatedBarChartExample1ViewController.viewDidLayoutSubviews():AggregatedBarChartExample1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "UIScreen.main.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RUIPlainTableViewCell.layoutSubviews():RUIPlainTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_accessory.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.contentView.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

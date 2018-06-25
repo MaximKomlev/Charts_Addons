@@ -6,9 +6,9 @@
 //  Copyright © 2018 Maxim Komlev. All rights reserved.
 //
 
+import Charts
 import Foundation
 import CoreGraphics
-import Charts
 
 #if !os(OSX)
     import UIKit
@@ -18,7 +18,7 @@ public protocol AggregatedBarChartViewMarkerPositionDelegate: NSObjectProtocol {
     func getMarkerPosition(highlight: Highlight) -> CGPoint
 }
 
-/// Chart that draws aggregate bars.
+// Chart that draws aggregate bars.
 open class AggregatedBarChartView: BarChartView, AggregatedBarChartDataProvider {
     
     // MARK: Fields

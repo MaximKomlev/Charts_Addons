@@ -27,7 +27,7 @@
 		BC78047D20D43AC10041589F /* SwipeInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78047C20D43AC10041589F /* SwipeInteractiveTransition.swift */; };
 		BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCBB2A020D9D5D40094F8B7 /* Charts.framework */; };
 		BCEA9A3520DE0C0400CFAFBF /* BarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA9A3420DE0C0400CFAFBF /* BarMarkerView.swift */; };
-		BCFB2E2020D9DF2400954382 /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
+		BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
 		BCFB2E2820DB287000954382 /* data in Resources */ = {isa = PBXBuildFile; fileRef = BCFB2E2620DB286F00954382 /* data */; };
 		BCFB2E2C20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB2E2B20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift */; };
 /* End PBXBuildFile section */
@@ -38,13 +38,6 @@
 			containerPortal = BCFB2E1820D9DEE500954382 /* Charts_Addons.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BCEFC43920BF3AB400E2B7C9;
-			remoteInfo = Charts_Addons;
-		};
-		BCFB2E1E20D9DF1F00954382 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCFB2E1820D9DEE500954382 /* Charts_Addons.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCEFC43820BF3AB400E2B7C9;
 			remoteInfo = Charts_Addons;
 		};
 /* End PBXContainerItemProxy section */
@@ -85,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFB2E2020D9DF2400954382 /* Charts_Addons.framework in Frameworks */,
+				BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */,
 				BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +217,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BCFB2E1F20D9DF1F00954382 /* PBXTargetDependency */,
 			);
 			name = Charts_Addons_Demo;
 			productName = Charts_Addons_Demo;
@@ -374,14 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BCFB2E1F20D9DF1F00954382 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts_Addons;
-			targetProxy = BCFB2E1E20D9DF1F00954382 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC45BB4320C21BA00000F98E /* Main.storyboard */ = {

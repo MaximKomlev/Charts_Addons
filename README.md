@@ -7,12 +7,12 @@ The extention of bar chart visually aggregates overlapped bars under single bar 
 
 - **Timeline presents 7 days period**
 <p align="center">
-<img src="./screenshots/week.png" width="400"/>
+<img src="./screenshots/week.png" width="812"/>
 </p>
 
 - **Scaled timeline to presents 1 day period**
 <p align="center">
-<img src="./screenshots/day.png" width="400"/>
+<img src="./screenshots/day.png" width="812"/>
 </p>
 
 ## License

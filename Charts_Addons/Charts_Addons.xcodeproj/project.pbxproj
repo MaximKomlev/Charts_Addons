@@ -11,6 +11,7 @@
 		BC45BB3220C210950000F98E /* AggregatedBarChartRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45BB3120C210950000F98E /* AggregatedBarChartRenderer.swift */; };
 		BC88CA8E20D8996B0015D8B0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC88CA8D20D8996B0015D8B0 /* Charts.framework */; };
 		BCEA9A3D20E13A6D00CFAFBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BCEA9A3C20E13A6D00CFAFBF /* README.md */; };
+		BCEA9A4220E1744200CFAFBF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BCEA9A4120E1744200CFAFBF /* LICENSE */; };
 		BCEFC43E20BF3AB400E2B7C9 /* Charts_Addons.h in Headers */ = {isa = PBXBuildFile; fileRef = BCEFC43C20BF3AB400E2B7C9 /* Charts_Addons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCEFC44E20BF549200E2B7C9 /* AggregatedBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFC44D20BF549200E2B7C9 /* AggregatedBarChartView.swift */; };
 		BCEFC45120BF561100E2B7C9 /* AggregatedBarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEFC45020BF561100E2B7C9 /* AggregatedBarHighlighter.swift */; };
@@ -22,6 +23,7 @@
 		BC45BB3120C210950000F98E /* AggregatedBarChartRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregatedBarChartRenderer.swift; sourceTree = "<group>"; };
 		BC88CA8D20D8996B0015D8B0 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEA9A3C20E13A6D00CFAFBF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		BCEA9A4120E1744200CFAFBF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
 		BCEFC43920BF3AB400E2B7C9 /* Charts_Addons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Charts_Addons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEFC43C20BF3AB400E2B7C9 /* Charts_Addons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Charts_Addons.h; sourceTree = "<group>"; };
 		BCEFC43D20BF3AB400E2B7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		BCEFC44520BF3DD200E2B7C9 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				BCEA9A4120E1744200CFAFBF /* LICENSE */,
 				BCEA9A3C20E13A6D00CFAFBF /* README.md */,
 				BCEFC43D20BF3AB400E2B7C9 /* Info.plist */,
 			);
@@ -210,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEA9A4220E1744200CFAFBF /* LICENSE in Resources */,
 				BCEA9A3D20E13A6D00CFAFBF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

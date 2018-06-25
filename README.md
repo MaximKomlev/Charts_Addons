@@ -11,12 +11,12 @@ To add the framework into your project:
 2) add Carts_Addons.framework for you target in "Linked Frameworks and Libraries" 
 
 For slightly customization you can change attributes of AggregatedBarChartView: 
-### -**groupWidth** - to specify bar width
-### -**groupMargin**  -  to specify margin betwen bar
-### -**barBorderRoundedCorner** - to specify rounding for corners 
+-**groupWidth**: to specify bar width
+-**groupMargin**:  to specify margin betwen bar
+-**barBorderRoundedCorner**: to specify rounding for corners 
 
 Protocol AggregatedBarChartViewMarkerPositionDelegate provides interface to get position of the marker according to the selected bar.
-### -**func getMarkerPosition(highlight: Highlight) -> CGPoint**
+-**func getMarkerPosition(highlight: Highlight) -> CGPoint**
 
 Example of using you can find at **Charts_Addons_Demo** project.
 

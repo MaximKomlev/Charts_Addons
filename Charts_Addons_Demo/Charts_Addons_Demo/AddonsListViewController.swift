@@ -11,7 +11,7 @@ import UIKit
 struct AddonsList {
     static let addonsDef: Dictionary<String, Dictionary<String, String>> = ["aggregatedbar":
                                                                                     ["title": "Aggregated Bar Chart",
-                                                                                     "description": "The bar chart visually aggregates overlapped bars under single bar of extreme values (min/max or median) of them, e.g. for discrete data, like temperature, on timeline, it usefull to show the bars with constant size, and to aggregate them if they overlap each other."]]
+                                                                                     "description": "The bar chart visually aggregates overlapped bars under single bar of extreme values (min/max or median) of them, e.g. for discrete data, like temperature, on timeline, it usefull to show the bars with constant width, and to aggregate them if they overlap each other."]]
 }
 
 class AddonsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,

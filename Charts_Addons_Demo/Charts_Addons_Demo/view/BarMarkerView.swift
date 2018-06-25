@@ -17,21 +17,27 @@ open class BarMarkerView: MarkerView {
     override open func draw(context: CGContext, point: CGPoint) {
         super.draw(context: context, point: point)
         
-        let x = point.x
-        
+        let rect = CGRect(x: point.x, y: point.y - 16 / 2, width: 16, height: 16)
+
         context.saveGState()
-        
-        context.setAlpha(1.0)
-        
         context.beginPath()
-        context.setShadow(offset: CGSize(width: 0, height: 1), blur: 4, color: sysGrey.cgColor)
+
+        context.setShadow(offset: CGSize(width: 0, height: 1), blur: 3, color: sysGrey.cgColor)
         context.setFillColor(UIColor.white.cgColor)
-        context.fillEllipse(in: CGRect(x: x, y: point.y - 7.5, width: 15, height: 15))
-        context.setShadow(offset: CGSize.zero, blur: 2, color: nil)
+        context.move(to: CGPoint(x: rect.origin.x + rect.width / 2, y: rect.origin.y))
+        context.addLine(to: CGPoint(x: rect.origin.x, y: rect.origin.y + rect.height))
+        context.addLine(to: CGPoint(x: rect.origin.x + rect.width, y: rect.origin.y + rect.height))
+        context.closePath()
+        context.fillPath()
+
+        context.setShadow(offset: CGSize.zero, blur: 0, color: UIColor.clear.cgColor)
         context.setFillColor(highlightedColor.cgColor)
-        context.fillEllipse(in: CGRect(x: x + 3.5, y: point.y - 4, width: 8, height: 8))
-        context.strokePath()
-        
+        context.move(to: CGPoint(x: rect.origin.x + rect.width / 2, y: rect.origin.y + rect.height * 3 / 8))
+        context.addLine(to: CGPoint(x: rect.origin.x + 5, y: rect.origin.y + rect.height * 3 / 4))
+        context.addLine(to: CGPoint(x: rect.origin.x + 11, y: rect.origin.y + rect.height * 3 / 4))
+        context.closePath()
+        context.fillPath()
+
         context.restoreGState()
     }
     

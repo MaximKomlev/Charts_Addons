@@ -189,8 +189,8 @@ class AggregatedBarChartExample1ViewController: UIViewController, ChartViewDeleg
 
         _contentView.addSubview(_chartView)
 
-        _selectedValueLabel.font = UIFont.systemFont(ofSize: font_size_label14)
-        _selectedValueLabel.textColor = sysLabelColor
+        _selectedValueLabel.font = UIFont.systemFont(ofSize: font_size_label12)
+        _selectedValueLabel.textColor = sysGrey
         _selectedValueLabel.textAlignment = .left
         _selectedValueLabel.numberOfLines = 1
         _selectedValueLabel.lineBreakMode = .byTruncatingTail

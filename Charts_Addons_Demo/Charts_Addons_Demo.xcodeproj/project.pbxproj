@@ -27,15 +27,14 @@
 		BC78047D20D43AC10041589F /* SwipeInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78047C20D43AC10041589F /* SwipeInteractiveTransition.swift */; };
 		BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCBB2A020D9D5D40094F8B7 /* Charts.framework */; };
 		BCEA9A3520DE0C0400CFAFBF /* BarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA9A3420DE0C0400CFAFBF /* BarMarkerView.swift */; };
-		BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
-		BCEA9A4E20E31DC600CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
-		BCEA9A4F20E31DC600CFAFBF /* Charts_Addons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCEA9A5620E31F6D00CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
+		BCEA9A5720E31F6D00CFAFBF /* Charts_Addons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCFB2E2820DB287000954382 /* data in Resources */ = {isa = PBXBuildFile; fileRef = BCFB2E2620DB286F00954382 /* data */; };
 		BCFB2E2C20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB2E2B20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BCEA9A5020E31DC600CFAFBF /* PBXContainerItemProxy */ = {
+		BCEA9A5820E31F6D00CFAFBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCFB2E1820D9DEE500954382 /* Charts_Addons.xcodeproj */;
 			proxyType = 1;
@@ -52,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BCEA9A5220E31DC600CFAFBF /* Embed Frameworks */ = {
+		BCEA9A5A20E31F6D00CFAFBF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BCEA9A4F20E31DC600CFAFBF /* Charts_Addons.framework in Embed Frameworks */,
+				BCEA9A5720E31F6D00CFAFBF /* Charts_Addons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,9 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */,
+				BCEA9A5620E31F6D00CFAFBF /* Charts_Addons.framework in Frameworks */,
 				BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */,
-				BCEA9A4E20E31DC600CFAFBF /* Charts_Addons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,12 +235,12 @@
 				BC45BB3A20C21BA00000F98E /* Resources */,
 				90D9136CE8B535DF408BD110 /* [CP] Embed Pods Frameworks */,
 				C5CDA3BDED4FDA81E264E389 /* [CP] Copy Pods Resources */,
-				BCEA9A5220E31DC600CFAFBF /* Embed Frameworks */,
+				BCEA9A5A20E31F6D00CFAFBF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BCEA9A5120E31DC600CFAFBF /* PBXTargetDependency */,
+				BCEA9A5920E31F6D00CFAFBF /* PBXTargetDependency */,
 			);
 			name = Charts_Addons_Demo;
 			productName = Charts_Addons_Demo;
@@ -394,10 +392,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BCEA9A5120E31DC600CFAFBF /* PBXTargetDependency */ = {
+		BCEA9A5920E31F6D00CFAFBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts_Addons;
-			targetProxy = BCEA9A5020E31DC600CFAFBF /* PBXContainerItemProxy */;
+			targetProxy = BCEA9A5820E31F6D00CFAFBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -28,11 +28,20 @@
 		BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCBB2A020D9D5D40094F8B7 /* Charts.framework */; };
 		BCEA9A3520DE0C0400CFAFBF /* BarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA9A3420DE0C0400CFAFBF /* BarMarkerView.swift */; };
 		BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
+		BCEA9A4E20E31DC600CFAFBF /* Charts_Addons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; };
+		BCEA9A4F20E31DC600CFAFBF /* Charts_Addons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2E1D20D9DEE500954382 /* Charts_Addons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCFB2E2820DB287000954382 /* data in Resources */ = {isa = PBXBuildFile; fileRef = BCFB2E2620DB286F00954382 /* data */; };
 		BCFB2E2C20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB2E2B20DBE79F00954382 /* AggregatedBarChartDateValueFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BCEA9A5020E31DC600CFAFBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFB2E1820D9DEE500954382 /* Charts_Addons.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEFC43820BF3AB400E2B7C9;
+			remoteInfo = Charts_Addons;
+		};
 		BCFB2E1C20D9DEE500954382 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BCFB2E1820D9DEE500954382 /* Charts_Addons.xcodeproj */;
@@ -41,6 +50,20 @@
 			remoteInfo = Charts_Addons;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCEA9A5220E31DC600CFAFBF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCEA9A4F20E31DC600CFAFBF /* Charts_Addons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9AEE1C3E50E67AF76937091B /* Pods-Charts_Addons_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts_Addons_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charts_Addons_Demo/Pods-Charts_Addons_Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +103,7 @@
 			files = (
 				BCEA9A4320E17BFB00CFAFBF /* Charts_Addons.framework in Frameworks */,
 				BCCBB2A120D9D5D40094F8B7 /* Charts.framework in Frameworks */,
+				BCEA9A4E20E31DC600CFAFBF /* Charts_Addons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,10 +237,12 @@
 				BC45BB3A20C21BA00000F98E /* Resources */,
 				90D9136CE8B535DF408BD110 /* [CP] Embed Pods Frameworks */,
 				C5CDA3BDED4FDA81E264E389 /* [CP] Copy Pods Resources */,
+				BCEA9A5220E31DC600CFAFBF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCEA9A5120E31DC600CFAFBF /* PBXTargetDependency */,
 			);
 			name = Charts_Addons_Demo;
 			productName = Charts_Addons_Demo;
@@ -367,6 +393,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BCEA9A5120E31DC600CFAFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts_Addons;
+			targetProxy = BCEA9A5020E31DC600CFAFBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BC45BB4320C21BA00000F98E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -505,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C67C4F37FCCDC5552B6B6865 /* Pods-Charts_Addons_Demo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AEE1C3E50E67AF76937091B /* Pods-Charts_Addons_Demo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

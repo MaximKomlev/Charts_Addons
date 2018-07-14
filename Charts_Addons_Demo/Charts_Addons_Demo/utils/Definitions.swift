@@ -9,12 +9,6 @@
 import UIKit
 import Foundation
 
-public enum GoogleAuthStatus: Int {
-    case loggedOut = 0
-    case loggedIn = 1
-    case error = 2
-}
-
 public enum TitledImageLabelLayout {
     case bottom
     case top
@@ -41,18 +35,6 @@ func directionToRadians(_ direction: Direction) -> CGFloat {
     case .none:
         return 0
     }
-}
-
-enum GuardianType: Int {
-    case sentry = 1
-    case counter = 2
-}
-
-struct ProfileType {
-    static var unknown: UInt8 = 0
-    static var none: UInt8 = 1
-    static var strict: UInt8 = 2
-    static var forChild: UInt8 = ProfileType.strict | 4
 }
 
 struct ActionType {
@@ -108,15 +90,6 @@ struct DeviceType {
     }
     
 }
-
-// MARK: App notification definitions
-
-let GoogleAuthUINotificationId: String = "GoogleAuthUINotification"
-
-// MARK: Prohibited regexp symbols definition
-
-let prohibitedYoutubeRegex: String = "[!@#$%^&*()\\.\\:;,<>\\?\\[\\]\\{\\}]+"
-let extraSpaceRegex: String = "[ ]{2,}"
 
 // MARK: Reusable CollectionView identificators
 

@@ -11,13 +11,13 @@ import Foundation
 
 // MARK: Default durations
 
-let RUIViewControllerDuration08: Double = 0.8
-let RUIViewControllerDuration06: Double = 0.6
-let RUIViewControllerDuration05: Double = 0.5
-let RUIViewControllerDuration04: Double = 0.4
-let RUIViewControllerDuration03: Double = 0.3
-let RUIViewControllerDuration02: Double = 0.2
-let RUIViewControllerDuration01: Double = 0.1
+let RUIViewAnimationDuration08: Double = 0.8
+let RUIViewAnimationDuration06: Double = 0.6
+let RUIViewAnimationDuration05: Double = 0.5
+let RUIViewAnimationDuration04: Double = 0.4
+let RUIViewAnimationDuration03: Double = 0.3
+let RUIViewAnimationDuration02: Double = 0.2
+let RUIViewAnimationDuration01: Double = 0.1
 
 // MARK: Colors
 /*

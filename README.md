@@ -32,6 +32,11 @@ Example of using you can find at **Charts_Addons_Demo** project.
 <img src="./screenshots/day.png" width="812"/>
 </p>
 
+- **Scaling timeline to presents 1 day period**
+<p align="center">
+<img src="./screenshots/landscape.gif" width="812"/>
+</p>
+
 ## License
 
 This project is licensed under the terms of the [MIT license](https://github.com/MaximKomlev/Charts_Addons/blob/master/LICENSE).

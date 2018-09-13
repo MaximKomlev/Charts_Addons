@@ -14,7 +14,7 @@ import CoreGraphics
     import UIKit
 #endif
 
-public protocol AggregatedBarChartViewMarkerPositionDelegate: NSObjectProtocol {
+@objc public protocol AggregatedBarChartViewMarkerPositionDelegate: NSObjectProtocol {
     func getMarkerPosition(highlight: Highlight) -> CGPoint
 }
 
@@ -53,7 +53,7 @@ open class AggregatedBarChartView: BarChartView, AggregatedBarChartDataProvider 
         highlighter = AggregatedBarHighlighter(chart: self)
     }
     
-    open weak var markerPositionDelegate: AggregatedBarChartViewMarkerPositionDelegate?
+    @objc open weak var markerPositionDelegate: AggregatedBarChartViewMarkerPositionDelegate?
     
     public var groupMargin: CGFloat {
         get {

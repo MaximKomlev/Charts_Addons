@@ -221,7 +221,10 @@ open class AggregatedBarChartRenderer: BarChartRenderer {
                 context.setFillColor(group.color.cgColor)
             }
             
-            let bezierPath = UIBezierPath(roundedRect: group.rect, byRoundingCorners:[.topLeft, .topRight], cornerRadii: CGSize(width: dp.barBorderRoundedCorner, height: dp.barBorderRoundedCorner))
+            let bezierPath = UIBezierPath(roundedRect: group.rect,
+                                          byRoundingCorners:[.topLeft, .topRight],
+                                          cornerRadii: CGSize(width: dp.barBorderRoundedCorner, height: dp.barBorderRoundedCorner))
+            context.addPath(bezierPath.cgPath)
             bezierPath.fill()
             bezierPath.lineWidth = borderWidth
             bezierPath.stroke()
@@ -349,26 +352,28 @@ open class AggregatedBarChartRenderer: BarChartRenderer {
         context.saveGState()
         
         for high in indices {
-            let idx = findBarForPoint(x: high.xPx)
-            if (idx > -1) {
-                let groupRects:GroupRect = self.groupRects[idx]
-                let barRect: CGRect = groupRects.rect
-                
-                guard
-                    let set = barData.getDataSetByIndex(0) as? IBarChartDataSet,
-                    set.isHighlightEnabled
-                    else { return }
-                
-                setHighlightDrawPos(highlight: high, barRect: barRect)
-                context.setFillColor(set.highlightColor.cgColor)
-                context.setAlpha(set.highlightAlpha)
-                context.fill(barRect)
+            if !high.xPx.isNaN {
+                let idx = findBarForPoint(x: high.xPx)
+                if idx > -1 {
+                    let groupRects: GroupRect = self.groupRects[idx]
+                    let barRect: CGRect = groupRects.rect
+                    
+                    guard
+                        let set = barData.getDataSetByIndex(0) as? IBarChartDataSet,
+                        set.isHighlightEnabled
+                        else { return }
+                    
+                    setHighlightDrawPos(highlight: high, barRect: barRect)
+                    context.setFillColor(set.highlightColor.cgColor)
+                    context.setAlpha(set.highlightAlpha)
+                    context.fill(barRect)
+                }
             }
         }
         
         context.restoreGState()
     }
-    
+
     public func findDataEntryAt(x: CGFloat, y: CGFloat) -> (dataSetIndex: Int, dataEntryIndex: Int)? {
         let idx = findBarForPoint(x: x)
         if (idx > -1) {
